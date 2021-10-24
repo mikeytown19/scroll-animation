@@ -3,9 +3,11 @@
 }
 html,
 body {
-  padding: 0;
+  padding: 0px;
   margin: 0;
+  overflow-y: none;
 }
+
 
 * {
   box-sizing: border-box;
@@ -46,3 +48,22 @@ main {
   left: 0;
   transition: width 0.3s ease-in-out;
 }
+
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 8px;
+
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  main {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
